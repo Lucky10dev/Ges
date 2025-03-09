@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+<widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Inria Serif</family>
+    <italic>true</italic>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>781</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item row="0" column="0" alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Inria Serif</family>
+         <pointsize>22</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Agenda</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="btnAddAgenda">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Inria Serif</family>
+           <pointsize>10</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="text">
+          <string>Aggiungi</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnVisAgenda">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Inria Serif</family>
+           <pointsize>10</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="text">
+          <string>Visualizza</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnModifAgenda">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Inria Serif</family>
+           <pointsize>10</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="text">
+          <string>Modifica</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnElimAgenda">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Inria Serif</family>
+           <pointsize>10</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="text">
+          <string>Elimina</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>408</width>
+           <height>33</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="comboFiltraAgenda">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Inria Serif</family>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="currentText">
+          <string>Scegli</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Scegli</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Select</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>prova</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>prova1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>prova2</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineCercaAgenda">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Inria Serif</family>
+           <pointsize>12</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="placeholderText">
+          <string>Cerca...</string>
+         </property>
+         <property name="cursorMoveStyle">
+          <enum>Qt::LogicalMoveStyle</enum>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>777</width>
+          <height>530</height>
+         </rect>
+        </property>
+        <widget class="QTableView" name="tableAgendaEventi">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>0</y>
+           <width>391</width>
+           <height>171</height>
+          </rect>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QCalendarWidget" name="calendarWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>391</width>
+           <height>171</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QTableView" name="tableAgenda">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>171</y>
+           <width>781</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuNaviga">
+    <property name="title">
+     <string>Naviga</string>
+    </property>
+    <addaction name="actionAgenda"/>
+    <addaction name="actionClienti"/>
+    <addaction name="actionInventario"/>
+    <addaction name="actionFatture"/>
+    <addaction name="actionDocumenti"/>
+    <addaction name="actionReport"/>
+   </widget>
+   <widget class="QMenu" name="menuVisualizza">
+    <property name="title">
+     <string>Visualizza</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOpzioni">
+    <property name="font">
+     <font>
+      <family>Inria Serif</family>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="title">
+     <string>Opzioni</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuInfo">
+    <property name="font">
+     <font>
+      <family>Inria Serif</family>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="title">
+     <string>Info</string>
+    </property>
+   </widget>
+   <addaction name="menuHome"/>
+   <addaction name="menuNaviga"/>
+   <addaction name="menuVisualizza"/>
+   <addaction name="menuOpzioni"/>
+   <addaction name="menuInfo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAgenda">
+   <property name="text">
+    <string>Agenda</string>
+   </property>
+  </action>
+  <action name="actionClienti">
+   <property name="text">
+    <string>Clienti</string>
+   </property>
+  </action>
+  <action name="actionInventario">
+   <property name="text">
+    <string>Inventario</string>
+   </property>
+  </action>
+  <action name="actionFatture">
+   <property name="text">
+    <string>Fatture</string>
+   </property>
+  </action>
+  <action name="actionDocumenti">
+   <property name="text">
+    <string>Documenti</string>
+   </property>
+  </action>
+  <action name="actionReport">
+   <property name="text">
+    <string>Report</string>
+   </property>
+  </action>
+  <action name="actionAggiungi">
+   <property name="text">
+    <string>Aggiungi</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionVisualizza">
+   <property name="text">
+    <string>Visualizza</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionModifica">
+   <property name="text">
+    <string>Modifica</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionElimina">
+   <property name="text">
+    <string>Elimina</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

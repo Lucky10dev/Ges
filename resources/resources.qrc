@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/icons">
+    <file>icons/+ (1).png</file>
+    <file>icons/+.png</file>
+    <file>icons/kisspng-computer-icons-clip-art-left-arrow-5b19a8d53fe264.1016320815284082772617.jpg</file>
+    <file>icons/Progetto senza titolo (9).png</file>
+    <file>icons/Progetto senza titolo (10).png</file>
+    <file>icons/Progetto senza titolo (11).png</file>
+    <file>icons/Progetto senza titolo (12).png</file>
+    <file>icons/Progetto senza titolo (13).png</file>
+    <file>icons/Progetto senza titolo (14).png</file>
+    <file>icons/Progetto senza titolo (15).png</file>
+    <file>icons/Progetto senza titolo (16).png</file>
+  </qresource>
+</RCC>
